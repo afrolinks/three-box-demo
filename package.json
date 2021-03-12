@@ -1,0 +1,40 @@
+{
+    "name": "@multimonos/p5-snowpack",
+    "version": "1.0.0",
+    "description": "p5js ",
+    "main": "./src/index.js",
+    "scripts": {
+        "test": "npx jest",
+        "dev": "cd ./src && npx snowpack dev",
+        "build": "cd ./src && npx snowpack build"
+    },
+    "keywords": [
+        "threejs",
+        "snowpack"
+    ],
+    "author": "craig hopgood <searaig@gmail.com> (https://multimonos.com)",
+    "license": "MIT",
+    "dependencies": {
+        "@multimonos/p5-mixins": "latest",
+        "@multimonos/p5-vectorxt": "latest",
+        "gsap": "^3.6.0",
+        "ramda": "^0.27.1",
+        "three": "^0.126.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.13",
+        "@babel/core": "^7.12.13",
+        "@babel/node": "^7.12.13",
+        "@babel/preset-env": "^7.12.13",
+        "@babel/register": "^7.12.13",
+        "jest": "^26.6.3",
+        "jest-canvas-mock": "^2.3.1",
+        "snowpack": "^3.0.11"
+    },
+    "jest": {
+        "verbose": true,
+        "setupFiles": [
+            "jest-canvas-mock"
+        ]
+    }
+}
